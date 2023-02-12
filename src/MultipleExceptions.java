@@ -7,10 +7,12 @@ public class MultipleExceptions {
         try {
             var reader = new FileReader("file.txt");
             var value = reader.read();
-        } catch (FileNotFoundException e) {
-             e.printStackTrace();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+//        catch (FileNotFoundException e) {
+//             e.printStackTrace();
+//        }
     }
 }
