@@ -8,11 +8,11 @@ public class MultipleExceptions {
             var reader = new FileReader("file.txt");
             var value = reader.read();
         }
-        catch (IOException e) {
-            e.printStackTrace();
+        catch (FileNotFoundException e) {
+            System.out.println("File not found!!");
         }
-//        catch (FileNotFoundException e) {
-//             e.printStackTrace();
-//        }
+        catch (IOException e) {
+            System.out.println("IO Exception");
+        }
     }
 }
