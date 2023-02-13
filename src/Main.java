@@ -7,7 +7,9 @@ public class Main {
         try {
             ATM.display();
         } catch (Throwable e) {
-             e.printStackTrace();
+            var cause = e.getCause(); //Getting the caused Exception
+            System.out.println("Accessing the message directly from caused exception object");
+            System.out.println(cause.getMessage());
         }
     }
 
