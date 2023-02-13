@@ -9,8 +9,8 @@ public class Account {
 
     //IOException
 
-    public static void credit(int amount) throws IOException{
+    public static void credit(int amount) throws  InsufficientFundsException {
         if(amount<0)
-            throw  new IOException("credited amount cannot be negative");
+            throw  new InsufficientFundsException();
     }
 }
