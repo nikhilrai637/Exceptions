@@ -4,14 +4,12 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        var account = new Account();
-        account.debit(10);
-
         try {
-            account.credit(-100);
-        } catch (IOException e) {
-            System.out.println("Exception handling happens at the caller function " +
-                    ", not where we throw it at first place");
+            ATM.display();
+        } catch (Throwable e) {
+            System.out.println("An error occured." +
+                    " This is an example of chaining exceptions." +
+                    " Using Throwable class we are catching generic exceptions");
         }
     }
 
