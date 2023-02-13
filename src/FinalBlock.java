@@ -6,8 +6,7 @@ import java.text.SimpleDateFormat;
 public class FinalBlock {
     public static void show(){
         FileReader reader  = null;
-        try {
-              reader = new FileReader("file.txt");
+        try {reader = new FileReader("file.txt");
             var value = reader.read();
             new SimpleDateFormat().parse("");
         }
