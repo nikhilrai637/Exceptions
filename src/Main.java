@@ -7,9 +7,7 @@ public class Main {
         try {
             ATM.display();
         } catch (Throwable e) {
-            System.out.println("An error occured." +
-                    " This is an example of chaining exceptions." +
-                    " Using Throwable class we are catching generic exceptions");
+             e.printStackTrace();
         }
     }
 
